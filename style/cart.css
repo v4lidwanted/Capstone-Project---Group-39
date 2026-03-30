@@ -1,0 +1,91 @@
+/* CART PAGE ONLY */
+
+.cart-page {
+    padding: 40px;
+}
+
+.cart-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+/* LEFT SIDE */
+
+.cart-items {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item h3 {
+    margin-bottom: 5px;
+}
+
+.qty-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty-controls button {
+    background: #FF4D1C;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.remove-btn {
+    background: none;
+    color: #FF4D1C;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* RIGHT SIDE (CHECKOUT BOX) */
+
+.checkout-box {
+    flex: 1;
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    position: sticky;
+    top: 100px;
+    z-index: 0;
+}
+
+.summary {
+    margin-bottom: 20px;
+}
+
+.checkout-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkout-box input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #2A2A2A;
+    color: white;
+}
+
+.lg-nav-link {
+    font-size: 18px;
+}

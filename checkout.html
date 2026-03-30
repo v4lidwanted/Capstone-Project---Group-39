@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GadgetHub | Checkout</title>
+    <link rel="stylesheet" href="style/gagdethub_style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">GadgetHub</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <input type="text" placeholder="Search gadgets..." class="search-bar">
+            <a href="cart.html" class="cart-btn">
+                🛒 Cart <span id="cart-count">0</span>
+            </a>
+        </div>
+
+    </nav>
+
+    <!-- CHECKOUT FORM -->
+
+    <section class="checkout-section">
+
+        <h1>Checkout</h1>
+
+        <form id="checkout-form" class="checkout-form">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="john@example.com" required>
+
+            <label for="address">Shipping Address</label>
+            <textarea id="address" placeholder="123 Main St, City, Country" required></textarea>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+233 123 456 789" required>
+
+            <button type="submit" class="btn-primary">Confirm Order</button>
+
+        </form>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 GadgetHub. Built by Group 39.</p>
+    </footer>
+
+    <script src="script/checkoutpage.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>

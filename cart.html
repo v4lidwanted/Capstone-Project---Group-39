@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GadgetHub | Cart & Checkout</title>
+
+    <link rel="stylesheet" href="style/gagdethub_style.css">
+    <link rel="stylesheet" href="style/cart.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">GadgetHub</div>
+
+        <ul class="nav-links">
+            <li class="lg-nav-link"><a href="index.html">Home</a></li>
+            <!-- <li><a href="#">Products</a></li> -->
+
+        </ul>
+
+        <div class="nav-actions">
+            <input type="text" placeholder="Search gadgets..." class="search-bar">
+
+            <a href="cart.html" class="cart-btn">
+                🛒 Cart <span id="cart-count">0</span>
+            </a>
+        </div>
+
+    </nav>
+
+    <!-- <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="product.html">Products</a>
+        <span>/</span>
+        <span class="current">Cart</span>
+    </div> -->
+
+    <!-- MAIN CART + CHECKOUT -->
+
+    <section class="cart-page">
+
+        <h1>Your Cart</h1>
+
+        <div class="cart-container">
+
+            <!-- LEFT SIDE: CART ITEMS -->
+            <div class="cart-items" id="cart-items">
+
+                <!-- JS will load items here -->
+
+            </div>
+
+
+            <!-- RIGHT SIDE: CHECKOUT -->
+            <div class="checkout-box">
+
+                <h2>Checkout</h2>
+
+                <div class="summary">
+                    <p>Subtotal: $<span id="subtotal">0</span></p>
+                    <p>Shipping: Free ✓</p>
+                    <p>Discount: $30</p>
+                    <h3>Total: $<span id="total">0</span></h3>
+                </div>
+
+                <form id="checkout-form">
+
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Address" required>
+                    <input type="tel" placeholder="Phone Number" required>
+
+                    <button type="submit" class="btn-primary">
+                        Confirm Order
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <p>© 2026 GadgetHub. Built by Group 39.</p>
+    </footer>
+
+    <script src="script/cartpage.js"></script>
+
+</body>
+
+</html>
